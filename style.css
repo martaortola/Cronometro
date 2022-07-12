@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    vertical-align: baseline;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+p a{
+    display: inline;
+}
+
+img, picture, video, iframe, figure{
+    max-width: 100%;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em{
+    font-size: 1em;
+    font-weight: inherit;
+    font-style: inherit;
+    text-decoration: none;
+    color: inherit;
+}
+
+form, input, textarea, select, button, label{
+    font-family: inherit;
+    font-size: inherit;
+    hyphens: auto;
+    background-color: transparent;
+    color: inherit;
+    display: block;
+}
+
+blockquote:before, blockquote:after, q:before, q:after{
+    content: "";
+    content: none;
+}
+  
+::selection{
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+table, tr, td{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+svg{
+    width: 100%;
+    display: block;
+    fill: currentColor;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    min-height: 100vh;
+    font-size: 100%;
+    font-weight: 400;
+}
+
+.main{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 205, 205);
+    padding: 8rem 5rem;
+    font-size: 1.5em;
+}
+
+.botones{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+}
+
+.boton{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 1rem;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+}
+
+.svg{
+    max-width: 1.5rem;
+    margin-left: .5rem;
+}
+
+.svg.parar{
+    max-width: 1rem;
+}
+
+.cronometro{
+    display: flex;
+    flex-flow: row wrap;
+    font-size: 3em;
+}
+
+#contenedor{
+    margin-top: 2rem;
+}
+
+.p{
+    margin-right: 2rem;
+}
+
+.div{
+    background-color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+}
+
+.cruz{
+    max-width: 1.5rem;
+}
+
+.cruz:hover{
+    background-color: #282828;
+    fill: white;
+    border-radius: 50%;
+}
+
+.quitar{
+    display: none;
+}
+
+
+@media screen and (max-width: 430px){
+    .caja{
+        font-size: 1.2em;
+    }
+    .cronometro{
+        display: flex;
+        flex-flow: row wrap;
+        font-size: 2.5em;
+    }
+    .cruz{
+        background-color: #282828;
+        fill: white;
+        border-radius: 50%;
+    }
+}
+

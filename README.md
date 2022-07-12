@@ -1,3 +1,5 @@
+# Conversor
+
 Cronómetro hecho con JavaScript
 
 https://martaortola.com/cronometro/
